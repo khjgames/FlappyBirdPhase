@@ -38,7 +38,8 @@ function create() {
   bird = this.physics.add.sprite(config.width * 0.1, config.height / 2, 'bird').setOrigin(0);
 
   this.input.on('pointerdown', flap);
-  this.input.keyboard.on('keydown_SPACE', flap);
+  this.input.keyboard.on('keydown_SPACE', flap);  
+  this.input.keyboard.on('keydown_J', flap);
 }
 
 // if bird position x is same or larger than width of canvas go back to the left
