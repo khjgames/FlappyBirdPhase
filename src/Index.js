@@ -31,7 +31,7 @@ const VELOCITY = 200;
 
 let bird = null;
 let flapVelocity = 250;
-let totalDelta = null;
+let totalDelta = null; // unused so far?
 
 function create() {
   this.add.image(0, 0, 'sky').setOrigin(0);
@@ -51,6 +51,5 @@ function update(time, delta) {
 function flap() {
   bird.body.velocity.y = -flapVelocity;
 }
-
 
 new Phaser.Game(config);
